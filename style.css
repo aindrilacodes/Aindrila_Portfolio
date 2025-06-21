@@ -1,46 +1,56 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: #fff8e1;
   color: #080808;
   font-family: "Roboto", sans-serif;
 }
+
+/* Header */
 #header {
   width: 100%;
-  /* height: 100vh; */
-  /* height: auto; */
 }
+
 .container {
-  padding: 10px 10px;
+  padding: 10px;
 }
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .logo {
   width: 100px;
 }
+
 nav ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
 }
+
 nav ul li a {
   color: black;
   text-decoration: none;
   font-size: 18px;
   position: relative;
 }
+
 nav ul li a::after {
   content: "";
   width: 0%;
@@ -51,17 +61,19 @@ nav ul li a::after {
   bottom: -6px;
   transition: 0.3s;
 }
+
 nav ul li a:hover::after {
   width: 100%;
 }
 
 .header-text {
   padding: 10px;
-  margin-top: 10%;
+  margin-top: 3rem;
   display: flex;
   justify-content: space-evenly;
   font-size: 30px;
 }
+
 .header-left {
   display: flex;
   flex-direction: column;
@@ -69,37 +81,124 @@ nav ul li a:hover::after {
   justify-content: center;
   align-items: center;
 }
+
 .header-text h1 {
   font-size: 60px;
   margin-top: 20px;
 }
+
 .header-text p {
   text-align: center;
 }
+
 .header-text h1 span {
   color: #ffb300;
 }
+
 .dynamic-text {
   color: #ffca4b;
 }
+
 .myimg img {
   width: 400px;
   height: auto;
   background-color: #ffca4b;
-  border-radius: 30% 70% 70% 30%/ 30% 30% 70% 70%;
-
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   transition: box-shadow 0.3s ease-in-out;
 }
+
+.myimg img:hover {
+  box-shadow: 0 0 20px 5px rgba(255, 202, 75, 1);
+}
+
 .btn.btn2 {
   width: 200px;
   text-align: center;
   display: inline-block;
   background-color: #f9844a;
   border: none;
+  color: white;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
-.myimg img:hover {
-  box-shadow: 0 0 20px 5px rgba(255, 202, 75, 1);
+
+.btn.btn2:hover {
+  background-color: #d26e32;
 }
+
+/* Workflow */
+.workflow-section {
+  background-color: #fff4e6;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.workflow-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.workflow-step {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workflow-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.workflow-step i {
+  font-size: 28px;
+  color: #f9844a;
+  margin-bottom: 10px;
+}
+
+.workflow-step p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .workflow-container {
+    gap: 20px;
+  }
+
+  .workflow-step {
+    width: 100px;
+    padding: 16px;
+  }
+
+  .workflow-step i {
+    font-size: 24px;
+  }
+
+  .workflow-step p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .workflow-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /*------------- about ----------*/
 #about {
   padding: 50px 0;
@@ -813,4 +912,59 @@ nav .fa-solid {
 .edu-card p {
   font-size: 14px;
   color: #555;
+}
+/*skills section */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.accordion-header {
+  background: linear-gradient(to right, #f6bfa3, #e9d8a6);
+  color: #222;
+  cursor: pointer;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  text-align: left;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.accordion-header:hover {
+  background: linear-gradient(to right, #f6a783, #f3cc8f);
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 20px;
+  background-color: #fff7ed;
+  border-radius: 0 0 8px 8px;
+}
+
+.accordion-body .skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 12px 0;
+  font-size: 15px;
+  align-items: center;
+  line-height: 1.6;
+}
+
+.skill-icon {
+  margin-right: 5px;
+  vertical-align: middle;
+  transition: transform 0.2s ease-in-out;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
 }

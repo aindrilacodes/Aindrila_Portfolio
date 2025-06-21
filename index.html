@@ -52,35 +52,63 @@
         </div>
       </div>
     </div>
+    <!-- ----------- My Workflow Section ----------- -->
+    <section id="workflow" class="workflow-section">
+      <div class="container">
+        <h2 class="subtitle">My Workflow</h2>
+        <div class="workflow-container">
+          <div class="workflow-step">
+            <i class="fa-solid fa-lightbulb"></i>
+            <p>Ideation</p>
+          </div>
+          <div class="workflow-step">
+            <i class="fa-solid fa-diagram-project"></i>
+            <p>Planning</p>
+          </div>
+          <div class="workflow-step">
+            <i class="fa-solid fa-code"></i>
+            <p>Development</p>
+          </div>
+          <div class="workflow-step">
+            <i class="fa-solid fa-bug-slash"></i>
+            <p>Testing</p>
+          </div>
+          <div class="workflow-step">
+            <i class="fa-solid fa-rocket"></i>
+            <p>Deployment</p>
+          </div>
+          <div class="workflow-step">
+            <i class="fa-solid fa-gauge-high"></i>
+            <p>Optimize</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div id="about">
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-  <img
-    src="Assets/Images/output-onlinegiftools.gif"
-    alt=""
-    class="bounce-slow"
-  />
-  <img src="Assets/Images/ani.png" alt="" class="fade-in" />
-</div>
+            <img
+              src="Assets/Images/output-onlinegiftools.gif"
+              alt=""
+              class="bounce-slow"
+            />
+            <img src="Assets/Images/ani.png" alt="" class="fade-in" />
+          </div>
 
           <div class="about-col-2">
             <h1 class="subtitle">About Me</h1>
             <p>
-              Hello World! I'm Aindrila Dutta, a passionate full-stack Web
-              Developer based in India with a strong inclination toward backend
-              development and API design. I enjoy building scalable systems,
-              securing data flow, and ensuring high-performance architectures.
-              <br />
-              Recently, I’ve also started exploring the exciting field of
-              geospatial analysis using Python tools like GeoPandas and Folium
-              to understand data in a more visual and spatial context. Alongside
-              development, I’m actively nurturing my curiosity in cybersecurity
-              to better understand how to build and defend secure web
-              applications. Always eager to grow, I love collaborating on
-              impactful projects and continuously expanding my tech stack and
-              domain knowledge.
+              Hello World! I'm Aindrila Dutta, a full-stack web developer from
+              India with a strong focus on backend development and API design. I
+              love building scalable systems and secure, high-performance
+              applications.<br />
+              I'm currently exploring geospatial analysis using Python tools
+              like GeoPandas and Folium, and I’m also diving into cybersecurity
+              to strengthen my understanding of secure development. Passionate
+              about learning and collaboration, I enjoy working on impactful
+              projects and growing my tech stack.
             </p>
 
             <div class="tab-titles">
@@ -89,93 +117,177 @@
               </p>
               <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
-
             <div class="tab-contents active-tab" id="skills">
-              <ul class="skills-list">
-                <li>
-                  <span class="cat-div">Frontend</span><br />
-                  <div class="tile-wrapper">
-                    <div class="skill-tile fancy">
-                      <i class="fa-brands fa-html5" style="color: #e44d26"></i>
-                      <span>HTML</span>
-                    </div>
-                    <div class="skill-tile fancy">
+              <div class="accordion">
+                <!-- Frontend -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <i class="fa-solid fa-laptop-code"></i> Frontend Development
+                  </button>
+                  <div class="accordion-body">
+                    <div class="skill-row">
                       <i
-                        class="fa-brands fa-css3-alt"
+                        class="fa-brands fa-html5 skill-icon"
+                        style="color: #e44d26"
+                      ></i>
+                      HTML
+                      <i
+                        class="fa-brands fa-css3-alt skill-icon"
                         style="color: #2965f1"
                       ></i>
-                      <span>CSS</span>
-                    </div>
-                    <div class="skill-tile fancy">
-                      <i class="fa-brands fa-js" style="color: #f7df1e"></i>
-                      <span>JavaScript</span>
-                    </div>
-                    <div class="skill-tile fancy">
-                      <i class="fa-brands fa-react" style="color: #61dbfb"></i>
-                      <span>React</span>
-                    </div>
-                    <div class="skill-tile fancy">
+                      CSS
                       <i
-                        class="fa-brands fa-bootstrap"
+                        class="fa-brands fa-js skill-icon"
+                        style="color: #f7df1e"
+                      ></i>
+                      JavaScript
+                      <i
+                        class="fa-brands fa-react skill-icon"
+                        style="color: #61dbfb"
+                      ></i>
+                      React
+                      <!-- <i
+                        class="fa-brands fa-bootstrap skill-icon"
                         style="color: #7952b3"
                       ></i>
-                      <span>Bootstrap</span>
-                    </div>
-                    <div class="skill-tile fancy">
+                      Bootstrap -->
                       <img
                         src="Assets/Images/skills-logo/tailwind-css.svg"
-                        alt="Tailwind"
-                        width="24"
+                        class="skill-icon"
+                        width="20"
                       />
-                      <span>Tailwind</span>
+                      Tailwind CSS
                     </div>
                   </div>
-                </li>
+                </div>
 
-                <li>
-                  <span class="cat-div">Backend</span><br />
-                  <div class="tile-wrapper">
-                    <div class="skill-tile fancy">
+                <!-- Backend -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <i class="fa-solid fa-database"></i> Backend & Database
+                  </button>
+                  <div class="accordion-body">
+                    <div class="skill-row">
                       <img
                         src="Assets/Images/skills-logo/nodejs.svg"
-                        alt="Node.js"
-                        width="24"
+                        class="skill-icon"
+                        width="20"
                       />
-                      <span>Node.js</span>
-                    </div>
-                    <div class="skill-tile fancy">
+                      Node.js
                       <img
                         src="Assets/Images/skills-logo/mongodb-original-wordmark.svg"
-                        alt="MongoDB"
-                        width="24"
+                        class="skill-icon"
+                        width="20"
                       />
-                      <span>MongoDB</span>
+                      MongoDB
+                      <img
+                        src="Assets/Images/skills-logo/mysql.png"
+                        class="skill-icon"
+                        width="20"
+                      />
+                      MySQL
+                      <i
+                        class="fa-brands fa-node skill-icon"
+                        style="color: #8cc84b"
+                      ></i>
+                      Express.js
                     </div>
                   </div>
-                </li>
+                </div>
 
-                <li>
-                  <span class="cat-div">Other</span><br />
-                  <div class="tile-wrapper">
-                    <div class="skill-tile fancy">
+                <!-- Programming -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <i class="fa-solid fa-code"></i> Programming Languages
+                  </button>
+                  <div class="accordion-body">
+                    <div class="skill-row">
                       <img
                         src="Assets/Images/skills-logo/icons8-java-logo-48.png"
-                        alt="Java"
-                        width="24"
+                        class="skill-icon"
+                        width="20"
                       />
-                      <span>Java</span>
-                    </div>
-                    <div class="skill-tile fancy">
+                      Java
                       <img
                         src="Assets/Images/skills-logo/icons8-python-48.png"
-                        alt="Python"
-                        width="24"
+                        class="skill-icon"
+                        width="20"
                       />
-                      <span>Python</span>
+                      Python
+                      <i
+                        class="fa-brands fa-js skill-icon"
+                        style="color: #f7df1e"
+                      ></i>
+                      JavaScript
                     </div>
                   </div>
-                </li>
-              </ul>
+                </div>
+
+                <!-- Tools -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <i class="fa-solid fa-wrench"></i> Tools & Platforms
+                  </button>
+                  <div class="accordion-body">
+                    <div class="skill-row">
+                      <i class="fa-brands fa-github skill-icon"></i> GitHub
+                      <img
+                        src="Assets/Images/skills-logo/post.png"
+                        class="skill-icon"
+                        width="20"
+                      />
+                      Postman
+                      <img
+                        src="Assets/Images/skills-logo/vscode.jpeg"
+                        class="skill-icon"
+                        width="20"
+                      />
+                      VS Code
+                      <img
+                        src="Assets/Images/skills-logo/jup.png"
+                        class="skill-icon"
+                        width="20"
+                      />
+                      Jupyter Notebook
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Geospatial + RPA -->
+                <div class="accordion-item">
+                  <button class="accordion-header">
+                    <i class="fa-solid fa-globe"></i> Geospatial Tools & RPA
+                  </button>
+                  <div class="accordion-body">
+                    <div class="skill-row">
+                      <img
+                        src="Assets/Images/skills-logo/geopandas-logo.png"
+                        class="skill-icon"
+                        width="20"
+                      />
+                      GeoPandas
+                      <img
+                        src="Assets/Images/skills-logo/folium-logo.png"
+                        class="skill-icon"
+                        width="20"
+                      />
+                      Folium
+                      <img
+                        src="Assets/Images/skills-logo/numpy.png"
+                        class="skill-icon"
+                        width="20"
+                      />
+                      Numpy
+                      <img
+                        src="Assets/Images/skills-logo/ui.png"
+                        class="skill-icon"
+                        width="20"
+                      />
+                      UiPath
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="tab-contents" id="education">
@@ -313,6 +425,24 @@
     </div>
 
     <div id="toast-container"></div>
+    <script>
+      const headers = document.querySelectorAll(".accordion-header");
+
+      headers.forEach((header) => {
+        header.addEventListener("click", () => {
+          const body = header.nextElementSibling;
+
+          document.querySelectorAll(".accordion-body").forEach((b) => {
+            if (b !== body) b.style.maxHeight = null;
+          });
+
+          body.style.maxHeight = body.style.maxHeight
+            ? null
+            : body.scrollHeight + "px";
+        });
+      });
+    </script>
+
     <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
