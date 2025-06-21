@@ -645,3 +645,126 @@ flex-basis: 100%;
   }
 }
 }
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cat-div {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+.tile-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.skill-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease-in-out;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-tile img,
+.skill-tile i {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.skill-tile span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* 💫 Fancy Glow on Hover */
+.fancy::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.15), transparent);
+  transform: rotate(45deg);
+  transition: opacity 0.4s;
+  opacity: 0;
+  z-index: 0;
+}
+
+.fancy:hover::before {
+  opacity: 1;
+}
+
+.fancy {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(145deg, #f3f3f3, #ffffff);
+  backdrop-filter: blur(4px);
+}
+.education-timeline {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edu-card {
+  background: linear-gradient(135deg, #ffffff, #f8f8f8);
+  border-left: 4px solid #4a90e2;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.edu-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.edu-card h3 span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #888;
+  margin-left: 8px;
+}
+
+.edu-card p {
+  font-size: 14px;
+  color: #555;
+}
